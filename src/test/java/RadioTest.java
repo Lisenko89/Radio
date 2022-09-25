@@ -171,4 +171,13 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testNewMaxStation() {
+        Radio radio = new Radio( 20);
+
+        radio.setCurrentStation(15);
+
+        assertEquals(15, radio.getCurrentStation());
+    }
 }
